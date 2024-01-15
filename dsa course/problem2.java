@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class problem2 {
-    public static <String> void main(String[] args) {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 //    problem -find the no whose digit sum is given from 1(left) to N(right)
 //        int left = 1;

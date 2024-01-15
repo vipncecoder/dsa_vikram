@@ -38,6 +38,7 @@ class second {
 //        System.out.println(ch);
 
 
+
 //        **************type conversion
 
 //        int var1 = 45;
