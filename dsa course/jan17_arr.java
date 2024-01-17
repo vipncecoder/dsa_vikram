@@ -40,12 +40,20 @@ public class jan17_arr {
          arr[N-1] =0;
         return N-1;
     }
-    // public static int insert_in_beginning(int[] arr, int N, int val){
-    //     if (N==0) {
-    //         return N;
-    //     }
-
-    // }
+    public static int insert_in_beginning(int[] arr, int N, int val){
+        if (N== arr.length) {
+            return N;
+        }
+        //make space at oth index
+        //shift everything to 1 place right
+        //orig : [1,2,3,4,5..]
+        for (int i = N; i >=1; i--) {
+            arr[i]=arr[i-1];
+        }
+        //use the space to fill in the new val
+        arr[0]=val;
+        return N+1;
+    }
     public static int delete_at_index(int[] arr, int N, int id){
         if (N==0) {
             return N;
@@ -59,6 +67,21 @@ public class jan17_arr {
         }
         arr[N-1] =0;
         return N-1;
+    }
+    public static int insert_at_index(int[] arr,int N, int id,int val){
+        
+        if (N==arr.length) {
+            return N;
+        }
+        if (id<0||id>=N) {
+            return N;
+        }
+        for (int i = N; i >=id ; i--) {
+            arr[i]= arr[i-1];
+        }
+
+        arr[id]= val;
+        return N+1;
     }
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
@@ -96,6 +119,12 @@ public class jan17_arr {
         // N=delete_at_index(arr, N, 2);
         // display(arr, N);
 
+        N=insert_in_beginning(arr, N, 12);
+        display(arr, N);
+
+
+        // N=insert_at_index(arr, N, 3, 14);
+        // display(arr, N);
 
         sc.close();
     }
