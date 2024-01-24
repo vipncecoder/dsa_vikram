@@ -5,7 +5,7 @@ public class jan21 {
         // System.out.println("vikram");
         // introduction to Strings
         // String sc="vikram kumar";
-        // Scanner sc=new Scanner(System.in);
+        Scanner sc=new Scanner(System.in);
 
         // declaration and initialisation of String
         // String str=" I am vikram kumar";
@@ -43,6 +43,32 @@ public class jan21 {
 
         // int to string & string to int
         
+        // problem 1
+        // given a positive integer, find the sum of itd first digit and last digit
+
+        // String s1= sc.next();
+        int N=sc.nextInt();
+
+        String s1=Integer.toString(N);
+        int firstDig= s1.charAt(0) - '0' ;//it will change char into int -- (- '0') will find char at that index as it is
+        int lastDig =s1.charAt(s1.length()-1)-'0' ;
+        System.out.println(firstDig + lastDig);
+        // System.out.pr intln(s1.charAt(0)+s1.charAt(s1.length()-1));
+
+        // A bit about characters
+        // char ch='a';
+        // System.out.println((int)ch);
+
+
+        //  String s="1234";
+        // //  System.out.println(s.charAt(0)+s.charAt(s.length()-1)); --will not work because of typecasting into integer
+        // for (int i = 0; i < 256; i++) {
+        //     System.out.println(i + "\t->\t" + (char)i);
+        // } 
+
+
+        // problem2-- given a string, find the most recurring character in that string
+
 
 
     }
