@@ -21,7 +21,7 @@ public class jan21 {
         // System.out.println(str3);
 
         // some inbuilt String function
-         String str4=" Hi, I am vikram kumar a nice cool men       ";
+        //  String str4=" Hi, I am vikram kumar a nice cool men       ";
         //  System.out.println(str4);
         //  System.out.println(str4.length());
         //  System.out.println(str4.charAt(6));
@@ -47,12 +47,12 @@ public class jan21 {
         // given a positive integer, find the sum of itd first digit and last digit
 
         // String s1= sc.next();
-        int N=sc.nextInt();
+        // int N=sc.nextInt();
 
-        String s1=Integer.toString(N);
-        int firstDig= s1.charAt(0) - '0' ;//it will change char into int -- (- '0') will find char at that index as it is
-        int lastDig =s1.charAt(s1.length()-1)-'0' ;
-        System.out.println(firstDig + lastDig);
+        // String s1=Integer.toString(N);
+        // int firstDig= s1.charAt(0) - '0' ;//it will change char into int -- (- '0') will find char at that index as it is
+        // int lastDig =s1.charAt(s1.length()-1)-'0' ;
+        // System.out.println(firstDig + lastDig);
         // System.out.pr intln(s1.charAt(0)+s1.charAt(s1.length()-1));
 
         // A bit about characters
@@ -68,7 +68,27 @@ public class jan21 {
 
 
         // problem2-- given a string, find the most recurring character in that string
-
+        String s2=sc.next();
+        // create an array of size 256
+        // to store frequency of diff
+        // character in the given string
+        int freq[] = new int[256];
+        for (int i = 0; i < s2.length(); i++) {
+            int id =s2.charAt(i);
+            // System.out.println(id);
+            freq[id]++;
+        }
+        // you have all the frequencies now 
+        // print the character with maximum frequency
+        int max_id=-1;
+        int max_f=-1;
+        for (int i = 0; i < 256; i++) {
+            if (freq[i] >max_f){
+                max_f=freq[i];
+                max_id=i;
+            }
+        }
+        System.out.println((char)max_id);
 
 
     }
