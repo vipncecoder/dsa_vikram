@@ -37,6 +37,25 @@ class couple{
     String convertToString(){
         return "[" + first + ", " + second + " ]";
     }
+    // constructor
+
+    // non parameterised 
+    couple(){
+        this.first=-1;
+        this.second=-1;
+    }
+
+    // parameterised constructor
+    couple(int first, int second){
+        this.first=first  ;
+        this.second=second;
+    }
+
+    // copy constructor
+    couple(couple c){
+        this.first= c.first;
+        this.second=c.second;
+    }
 }
 
 public class Jan26oop {
@@ -60,6 +79,9 @@ public class Jan26oop {
         c2.first=1;
         c2.second=5;
         System.out.println(c1.equals(c2));
+        
+
+
 
     }
     
