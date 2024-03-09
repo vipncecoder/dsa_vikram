@@ -56,6 +56,10 @@ class couple{
         this.first= c.first;
         this.second=c.second;
     }
+    public char[] multiply(int i) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'multiply'");
+    }
 }
 
 public class Jan26oop {
