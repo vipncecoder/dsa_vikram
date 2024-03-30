@@ -38,6 +38,11 @@ class MyStack{
         }
     }
 
+    public char[] peek() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'peek'");
+    }
+
 }
 public class stack {
     public static void main(String[] args) {
