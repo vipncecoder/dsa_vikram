@@ -15,7 +15,7 @@ public class number {
     static boolean[] primeSieve(int n){
         boolean isprime[]= new boolean[n+1];
         Arrays.fill(isprime,true);
-        isprime[0] = isprime[1] =false;
+        isprime[0] = isprime[1] =true;
     for (int i=2;i*i<=n;++i){
     if(!isprime[i]||(long)i*i>(long)n)
     continue;
